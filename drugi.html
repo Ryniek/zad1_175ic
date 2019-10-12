@@ -6,8 +6,21 @@
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <script>
     function onClickHandler() {
-    var text = document.getElementById('js-test').value;
-    console.log(text);
+        var figure = document.getElementById('comments-figure');
+        var text = document.getElementById('content-field').value;
+        var text2 = document.getElementById('author-field').value;
+        var comment = document.createElement('figure')
+        var content = document.createElement('p');
+        var author = document.createElement('span');
+        content.classList.add('comment-area');
+        content.style.background = 'blue';
+        content.innerHTML = text;
+        author.classList.add('author-field');
+        author.style.background = 'red';
+        author.innerHTML = text2;
+        figure.appendChild(comment);
+        comment.appendChild(content);
+        comment.appendChild(author);
 }
     </script>
 </head>
@@ -25,10 +38,14 @@
     <div class="main-container">
         <main class="page-main">
          <section>
-            <h4>Oceń stronę!</h4>
-             <input id="content-field" type="text"> <br>
-             <input id="author-field" type="text"> <br>
-             <button onclick="onClickHandler()">Dodaj komentarz</button>
+           <figure id="comments-figure">
+                <h4>Oceń stronę!</h4>
+               <label for="content-field">Content: </label>
+                <textarea id="content-field" type="text"></textarea> <br>
+                 <label for="author-field">Author: </label>
+                 <input id="author-field" type="text"> <br>
+                 <button onclick="onClickHandler()">Dodaj komentarz</button>
+             </figure>
          </section>
           <section>    
              <article>

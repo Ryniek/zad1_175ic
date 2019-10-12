@@ -68,6 +68,16 @@ a {
     text-align: center;
     color: bisque;
 }
+#comments-figure {
+    width: 500px;
+    border: 2px solid #252525;
+    padding: 10px;
+}
+#comments-figure h4 {
+    text-align: center;
+    margin: 0;
+    padding: 8px;
+}
 .single-article h3 {
     color: cadetblue;
 }
