@@ -58,11 +58,11 @@ a {
     flex-direction: row;
     justify-content:space-between;
 }
+.page-main {
+    padding: 20px;
+}
 .page-main h2{
     margin-top: 10px;
-}
-.news-section {
-    padding: 20px;
 }
 .news-section h2 {
     text-align: center;
@@ -70,6 +70,23 @@ a {
 }
 .single-article h3 {
     color: cadetblue;
+}
+.type-table {
+    border: 2px solid white;
+   border-collapse: collapse;
+    width: 450px;
+    height: 200px;
+}
+
+.type-table th {
+    border: 2px solid white;
+   border-collapse: collapse;
+    background-color: darkblue;
+}
+
+.type-table td {
+    border: 2px solid white;
+   border-collapse: collapse;
 }
 .page-aside figure{
     width: 400px;
