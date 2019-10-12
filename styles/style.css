@@ -78,6 +78,16 @@ a {
     margin: 0;
     padding: 8px;
 }
+.comment-area {
+    padding: 6px;
+    background-color: #252525;
+    margin: 0;
+    min-height: 25px;
+}
+.author-field {
+    padding: 6px; 
+    background-color: #132525;
+}
 .single-article h3 {
     color: cadetblue;
 }

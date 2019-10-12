@@ -4,25 +4,7 @@
     <meta charset="UTF-8">
     <title>Druga strona</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <script>
-    function onClickHandler() {
-        var figure = document.getElementById('comments-figure');
-        var text = document.getElementById('content-field').value;
-        var text2 = document.getElementById('author-field').value;
-        var comment = document.createElement('figure')
-        var content = document.createElement('p');
-        var author = document.createElement('span');
-        content.classList.add('comment-area');
-        content.style.background = 'blue';
-        content.innerHTML = text;
-        author.classList.add('author-field');
-        author.style.background = 'red';
-        author.innerHTML = text2;
-        figure.appendChild(comment);
-        comment.appendChild(content);
-        comment.appendChild(author);
-}
-    </script>
+    <script src="scripts/script.js"></script>
 </head>
 <body>
     <header class="page-header">
