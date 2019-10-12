@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>Druga strona</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <script>
+    function onClickHandler() {
+    var text = document.getElementById('js-test').value;
+    console.log(text);
+}
+    </script>
 </head>
 <body>
     <header class="page-header">
@@ -18,7 +24,13 @@
    </header>
     <div class="main-container">
         <main class="page-main">
-          <section class="news-section">    
+         <section>
+            <h4>Oceń stronę!</h4>
+             <input id="content-field" type="text"> <br>
+             <input id="author-field" type="text"> <br>
+             <button onclick="onClickHandler()">Dodaj komentarz</button>
+         </section>
+          <section>    
              <article>
                   <h3>Ewolucja</h3>
                   <p>Najstarszymi znanymi pingwinami są gatunki rodzaju Waimanu z wczesnego paleocenu Nowej Zelandii. Wczesne pingwiny, takie jak Inkayacu sprzed około 36 mln lat, były prawdopodobnie ubarwione inaczej niż współcześni przedstawiciele tej grupy – morfologia i rozmieszczenie melanosomów sugerują, że Inkayacu miał pióra ubarwione szaro i czerwono-brązowo. Jego melanosomy były mniejsze niż u dzisiejszych pingwinów. Zmiany w ich morfologii mogły wynikać z hydrodynamicznych wymagań podczas podwodnego pływania.
