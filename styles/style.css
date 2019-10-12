@@ -42,15 +42,21 @@ a {
 .page-header .main-nav .nav-list .nav-items > a {
     text-decoration: none
 }
+
+.page-header .main-nav .nav-list .nav-items > a:active {
+    text-decoration: underline;
+}
 .page-header .main-nav .nav-list .nav-items > a:hover:only-child {
     font-size: 120%;
+    color: burlywood;
 }
 .page-header .main-nav .nav-list .nav-items:first-child > a {
     color: red;
 }
-.page-main {
+.main-container {
     display: flex;
     flex-direction: row;
+    justify-content:space-between;
 }
 .page-main h2{
     margin-top: 10px;
@@ -65,13 +71,8 @@ a {
 .single-article h3 {
     color: cadetblue;
 }
-.single-article {
-    
-}
-.page-aside {
-    width: 30%;
-}
 .page-aside figure{
+    width: 400px;
     margin: 0;
 }
 .page-aside figure img {
@@ -81,8 +82,10 @@ a {
 }
 .page-footer {
     padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
 }
