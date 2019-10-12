@@ -3,6 +3,7 @@ body {
         font-family: sans-serif;
     font-size: 16px;
     color: white;
+    background-color: #424242;
 }
 a {
     color: white;
@@ -43,4 +44,18 @@ a {
 }
 .page-header .main-nav .nav-list .nav-items > a:hover:only-child {
     font-size: 120%;
+}
+.page-header .main-nav .nav-list .nav-items:first-child > a {
+    color: red;
+}
+.page-main {
+    display: flex;
+    flex-direction: row;
+}
+.page-footer {
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
